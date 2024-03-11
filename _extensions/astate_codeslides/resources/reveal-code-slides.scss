@@ -148,6 +148,10 @@ span.textbook-intro {
   height: auto;
 }
 
+.reveal aside {
+  margin-bottom: 0.6em;
+}
+
 .reveal aside ol:not(.aside-footnotes) {
   margin-top: 3px;
   border-top: 1px solid $grey;
