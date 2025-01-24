@@ -81,6 +81,13 @@ div.sourceCode pre.sourceCode, div.sourceCode pre.sourceCode code {
   overflow-x: visible;
 }
 
+/*  disable copy of leading $ and > in bash code blocks */
+code.bash > span > span:first-of-type:is(.ex, .op) {
+  user-select: none;
+  padding-right: 1ch;
+  margin-right: -1ch;
+}
+
 div.algorithm > pre code:not(.sourceCode) {
   border: none;
   max-height: fit-content;
@@ -149,7 +156,7 @@ span.textbook-intro {
 }
 
 .reveal aside {
-  margin-bottom: 0.6em;
+  margin-bottom: .6em;
 }
 
 .reveal aside ol:not(.aside-footnotes) {
@@ -663,6 +670,13 @@ div.algorithm {
   height: 92%;
   float: right;
   padding-top: .2em;
+}
+
+.columns {
+  display: table; /* Make the container element behave like a table */
+}
+*.columns>.column {
+  display: table-cell; /* Make elements inside the container behave like table cells */
 }
 
 // Math
