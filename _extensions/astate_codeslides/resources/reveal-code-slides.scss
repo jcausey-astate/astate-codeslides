@@ -87,6 +87,10 @@ code.bash > span > span:first-of-type:is(.ex, .op) {
   padding-right: 1ch;
   margin-right: -1ch;
 }
+/*  hide the copy button in bash code blocks */
+code.bash + button.code-copy-button {
+  visibility: hidden;
+}
 
 div.algorithm > pre code:not(.sourceCode) {
   border: none;
