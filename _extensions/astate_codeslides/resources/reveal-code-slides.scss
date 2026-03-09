@@ -246,6 +246,11 @@ ol.aside-footnotes li, ul.aside-footnotes li {
 //   margin-bottom: 0.3rem !important;
 // }
 
+// Make generated figures full width
+div.cell-output-display figure img{
+    width: 100vw !important;
+}
+
 img.quarto-figure-center+p.caption, figcaption {
   text-align: center;
 }
