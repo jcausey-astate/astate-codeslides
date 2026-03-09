@@ -698,6 +698,19 @@ div.algorithm {
   margin-bottom: 0em;
 }
 
+// Tables
+
+.nolines table {
+    border: none;
+    tr {
+      border: none;
+    }
+    td {
+      border: none;
+    }
+}
+
+
 /************/
 /* Printing */
 /************/
